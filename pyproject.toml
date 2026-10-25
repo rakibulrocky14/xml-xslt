@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "xslt-rescue"
+version = "0.1.0"
+description = "Find XML files that rely on browser-side XSLT and pre-render them to HTML before Chrome removes XSLT support."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+dependencies = ["lxml>=4.9"]
+
+[project.optional-dependencies]
+test = ["pytest"]
+
+[project.scripts]
+xslt-rescue = "xslt_rescue.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

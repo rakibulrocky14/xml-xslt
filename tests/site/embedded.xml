@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="#s"?>
+<!DOCTYPE doc [<!ATTLIST xsl:stylesheet id ID #IMPLIED>]>
+<doc><n>embedded ok</n>
+<xsl:stylesheet id="s" version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+ <xsl:template match="/"><html><body><xsl:value-of select="doc/n"/></body></html></xsl:template>
+</xsl:stylesheet></doc>

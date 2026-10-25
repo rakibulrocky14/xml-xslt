@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="xsl/rss.xsl"?>
+<rss version="2.0"><channel><title>Café Feed</title>
+<item><title>One &amp; first</title><link>https://example.com/1</link></item>
+<item><title>Zwei – naïve</title><link>https://example.com/2</link></item>
+</channel></rss>
